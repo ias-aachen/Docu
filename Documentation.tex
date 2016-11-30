@@ -205,8 +205,8 @@ numbers=noendperiod % Kein Punkt hinter Kapitelnummern
 %Listings
 %----------------------------------
 \usepackage{listings} %Fuer Programm-Quellcode im Text
-\input{listings/lstskill} % SKILL Language
-\input{listings/lstvams} % Verilog-A/AMS Language
+%\input{listings/lstskill} % SKILL Language
+%\input{listings/lstvams} % Verilog-A/AMS Language
 % define colors for source code list
 \ifthenelse{\boolean{PrintVersion}} %
 {% Print Version - Use no colors
@@ -229,33 +229,33 @@ numbers=noendperiod % Kein Punkt hinter Kapitelnummern
   \definecolor{colNumbers}{RGB}{0,0,0} 
   \hypersetup{colorlinks=true,final=true}  
 }
-\lstset{
-  captionpos=b,
-  abovecaptionskip=\medskipamount,
-  numbers=left,
-  numberstyle=\tiny\ttfamily\color{colNumbers},
-  language=VerilogAMS,
-  firstnumber=1,
-  frame=single,
-  frameround=fttt,
-  tabsize=4,
-  basicstyle=\small\ttfamily,
-  numberbychapter=true,
-  %escapechar=\#, % Escape char allows access to Latex. # will lead to some issues in Verilog sources
-  escapechar={}, % No escape char
-  showstringspaces=false,
-  breakatwhitespace=true,
-  breaklines=true,
-  prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookrightarrow\space}}, %,
-  keywordstyle=[0]\bfseries\color{colKeys},         % Keyword style - VerilogXL
-  keywordstyle=[1]\bfseries\color{colKeys},         %                 Verilog-AMS/A
-  keywordstyle=[3]\bfseries\color{colSystem},       %                 System Taskts
-  keywordstyle=[4]\bfseries\color{colDirectives},   %                 Compiler Directives
-  commentstyle=\itshape\color{colComments},      % Comment style
-  stringstyle=\color{colString},         % String literal style
-  identifierstyle=\color{colIdentifier}  % Identifier Style
-}
+%\lstset{
+%  captionpos=b,
+%  abovecaptionskip=\medskipamount,
+%  numbers=left,
+%  numberstyle=\tiny\ttfamily\color{colNumbers},
+%  language=VerilogAMS,
+%  firstnumber=1,
+%  frame=single,
+%  frameround=fttt,
+%  tabsize=4,
+%  basicstyle=\small\ttfamily,
+%  numberbychapter=true,
+%  %escapechar=\#, % Escape char allows access to Latex. # will lead to some issues in Verilog sources
+%  escapechar={}, % No escape char
+%  showstringspaces=false,
+%  breakatwhitespace=true,
+%  breaklines=true,
+%  prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+%  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookrightarrow\space}}, %,
+%  keywordstyle=[0]\bfseries\color{colKeys},         % Keyword style - VerilogXL
+%  keywordstyle=[1]\bfseries\color{colKeys},         %                 Verilog-AMS/A
+%  keywordstyle=[3]\bfseries\color{colSystem},       %                 System Taskts
+%  keywordstyle=[4]\bfseries\color{colDirectives},   %                 Compiler Directives
+%  commentstyle=\itshape\color{colComments},      % Comment style
+%  stringstyle=\color{colString},         % String literal style
+%  identifierstyle=\color{colIdentifier}  % Identifier Style
+%}
 
 
 
